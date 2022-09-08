@@ -16,7 +16,7 @@ public class CourseDTO implements Serializable {
 
     private CourseMapper courseMapper;
 
-    @NotNull
+    //    @NotNull
     private Long id;
 
     @NotNull

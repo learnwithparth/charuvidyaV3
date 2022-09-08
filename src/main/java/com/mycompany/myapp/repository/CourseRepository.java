@@ -17,8 +17,8 @@ public interface CourseRepository extends JpaRepository<Course, Long>, JpaSpecif
     @Query("select course from Course course where course.user.login = ?#{principal.username}")
     List<Course> findByUserIsCurrentUser();
 
-    @Query("select course from Course course where course.semester in (?1, ?2)")
-    List<Course> findAllBySemester(int a, int b);
+    //    @Query("select course from Course course where course.semester in (?1, ?2)")
+    //    List<Course> findAllBySemester(int a, int b);
 
     List<Course> findCourseByEnrolledUsersListsContaining(User user);
 
